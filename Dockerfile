@@ -1,0 +1,5 @@
+FROM node:12.18.1-slim AS front_dev 
+
+ENV PROJECT_ROOTDIR /app/client
+
+WORKDIR $PROJECT_ROOTDIR
