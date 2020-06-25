@@ -11,10 +11,9 @@ RUN apt update && \
 	make all doc info && \
 	mv git /usr/local/bin/
 
-
 ENV PROJECT_ROOTDIR /app/client
 
 WORKDIR $PROJECT_ROOTDIR
 
-
+RUN yarn global add @vue/cli
 
