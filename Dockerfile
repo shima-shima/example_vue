@@ -13,3 +13,5 @@ RUN yarn global add @vue/cli
 COPY client/package.json client/yarn.lock $PROJECT_ROOTDIR
 
 RUN yarn install
+
+FROM golang:1.14.4 AS server_dev
