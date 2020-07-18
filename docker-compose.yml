@@ -1,11 +1,11 @@
 version: '3.7'
 services:
-  front_dev:
-    container_name: front_dev
+  client_dev:
+    container_name: client_dev
     build:
-      context: .
+      context: ./client
       dockerfile: Dockerfile
-      target: front_dev
+      target: client_dev
     tty: true
     ports:
       - 8080:8080
@@ -18,7 +18,7 @@ services:
   server_dev:
     container_name: server_dev
     build:
-      context: .
+      context: ./server
       dockerfile: Dockerfile
       target: server_dev
     tty: true
